@@ -1,0 +1,100 @@
+<premis xsi:schemaLocation="info:lc/xmlns/premis-v2 http://www.loc.gov/standards/premis/v2/premis-v2-1.xsd" version="2.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="info:lc/xmlns/premis-v2">
+  <object xsi:type="file">
+    <objectIdentifier>
+      <objectIdentifierType>local</objectIdentifierType>
+      <objectIdentifierValue>local_identifier_value_here</objectIdentifierValue>
+    </objectIdentifier>
+    <objectIdentifier>
+      <objectIdentifierType>outside_id</objectIdentifierType>
+      <objectIdentifierValue>outside_id_value_here</objectIdentifierValue>
+    </objectIdentifier>
+    <preservationLevel>
+      <preservationLevelValue>OBJECT_LEVEL</preservationLevelValue>
+      <preservationLevelRationale>Categorized file system capture</preservationLevelRationale>
+      <preservationLevelDateAssigned>2013-01-01T14:41:03</preservationLevelDateAssigned>
+    </preservationLevel>
+    <objectCharacteristics>
+      <compositionLevel>0</compositionLevel>
+      <fixity>
+        <messageDigestAlgorithm>MD5</messageDigestAlgorithm>
+        <messageDigest>36b03197ad066cd719906c55eb68ab8d</messageDigest>
+        <messageDigestOriginator>LocalDCMS</messageDigestOriginator>
+      </fixity>
+      <size>20800896</size>
+      <format>
+        <formatDesignation>
+          <formatName>image/tiff</formatName>
+          <formatVersion>6.0</formatVersion>
+        </formatDesignation>
+        <formatRegistry>
+          <formatRegistryName>PRONOM</formatRegistryName>
+          <formatRegistryKey>fmt/10</formatRegistryKey>
+          <formatRegistryRole>specification</formatRegistryRole>
+        </formatRegistry>
+      </format>
+      <creatingApplication>
+        <creatingApplicationName>ScandAll 21</creatingApplicationName>
+        <creatingApplicationVersion>4.1.4</creatingApplicationVersion>
+        <dateCreatedByApplication>1998-10-30</dateCreatedByApplication>
+      </creatingApplication>
+      <creatingApplication>
+        <creatingApplicationName>Adobe Photoshop</creatingApplicationName>
+        <creatingApplicationVersion>CS2</creatingApplicationVersion>
+        <dateCreatedByApplication>2006-09-20T08:29:02</dateCreatedByApplication>
+      </creatingApplication>
+    </objectCharacteristics>
+    <originalName>0001h.tif</originalName>
+    <relationship>
+      <relationshipType>structural</relationshipType>
+      <relationshipSubType>is sibling</relationshipSubType>
+      <relatedObjectIdentification>
+        <relatedObjectIdentifierType>hdl</relatedObjectIdentifierType>
+        <relatedObjectIdentifierValue>loc.music/gottlieb.09602</relatedObjectIdentifierValue>
+        <relatedObjectSequence>0</relatedObjectSequence>
+      </relatedObjectIdentification>
+    </relationship>
+    <relationship>
+      <relationshipType>structural</relationshipType>
+      <relationshipSubType>is sibling</relationshipSubType>
+      <relatedObjectIdentification>
+        <relatedObjectIdentifierType>URI</relatedObjectIdentifierType>
+        <relatedObjectIdentifierValue>http://lcweb2.loc.gov/cocoon/ihas/loc.natlib.gottlieb.09601/mets.xml</relatedObjectIdentifierValue>
+        <relatedObjectSequence>0</relatedObjectSequence>
+      </relatedObjectIdentification>
+    </relationship>
+    <relationship>
+      <relationshipType>derivation</relationshipType>
+      <relationshipSubType>is source of</relationshipSubType>
+      <relatedObjectIdentification>
+        <relatedObjectIdentifierType>URL</relatedObjectIdentifierType>
+        <relatedObjectIdentifierValue>http://lcweb2.loc.gov/natlib/ihas/service/gottlieb/09601/ver01/0001v.jpg</relatedObjectIdentifierValue>
+        <relatedObjectSequence>0</relatedObjectSequence>
+      </relatedObjectIdentification>
+      <relatedEventIdentification>
+        <relatedEventIdentifierType>LocalDCMS</relatedEventIdentifierType>
+        <relatedEventIdentifierValue>E002.1</relatedEventIdentifierValue>
+        <relatedEventSequence>1</relatedEventSequence>
+      </relatedEventIdentification>
+    </relationship>
+    <linkingEventIdentifier>
+      <linkingEventIdentifierType>Local Repository</linkingEventIdentifierType>
+        <linkingEventIdentifierValue>E001.1</linkingEventIdentifierValue>
+    </linkingEventIdentifier>
+    <linkingEventIdentifier>
+      <linkingEventIdentifierType>Local Repository</linkingEventIdentifierType>
+      <linkingEventIdentifierValue>E001.2</linkingEventIdentifierValue>
+    </linkingEventIdentifier>
+    <linkingRightsStatementIdentifier>
+      <linkingRightsStatementIdentifierType>LOCAL</linkingRightsStatementIdentifierType>
+      <linkingRightsStatementIdentifierValue>local_rights_statement_one</linkingRightsStatementIdentifierValue>
+    </linkingRightsStatementIdentifier>
+    <linkingIntellectualEntityIdentifier>
+      <linkingIntellectualEntityIdentifierType>hdl</linkingIntellectualEntityIdentifierType>
+      <linkingIntellectualEntityIdentifierValue>loc.natlib.gottlieb.09601</linkingIntellectualEntityIdentifierValue>
+    </linkingIntellectualEntityIdentifier>
+    <linkingIntellectualEntityIdentifier>
+      <linkingIntellectualEntityIdentifierType>URI</linkingIntellectualEntityIdentifierType>
+      <linkingIntellectualEntityIdentifierValue>http://lcweb2.loc.gov/cocoon/ihas/loc.natlib.gottlieb.09601/default.html</linkingIntellectualEntityIdentifierValue>
+    </linkingIntellectualEntityIdentifier>
+  </object>
+</premis>

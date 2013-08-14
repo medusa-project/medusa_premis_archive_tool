@@ -1,0 +1,59 @@
+<object xsi:type="representation" version="2.2" xsi:schemaLocation="info:lc/xmlns/premis-v2 http://www.loc.gov/standards/premis/v2/premis-v2-2.xsd" xmlID="folder_000" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="info:lc/xmlns/premis-v2">
+  <objectIdentifier>
+    <objectIdentifierType></objectIdentifierType> 
+    <objectIdentifierValue></objectIdentifierValue> 
+  </objectIdentifier>
+  <objectIdentifier>
+    <objectIdentifierType>local</objectIdentifierType> 
+    <objectIdentifierValue>2cd</objectIdentifierValue> 
+  </objectIdentifier>
+  <objectIdentifier>
+    <objectIdentifierType>HANDLE</objectIdentifierType> 
+    <objectIdentifierValue>10111/MEDUSA:xxx</objectIdentifierValue> 
+  </objectIdentifier>
+  <preservationLevel>
+    <preservationLevelValue>BIT_LEVEL</preservationLevelValue> 
+    <preservationLevelRationale>Uncategorized file system capture</preservationLevelRationale> 
+    <preservationLevelDateAssigned>2012-01-01T14:41:03</preservationLevelDateAssigned> 
+  </preservationLevel>
+  <originalName>\\machine_name\original_name</originalName> 
+  <relationship>
+    <relationshipType>BASIC_COMPOUND_ASSET</relationshipType> 
+    <relationshipSubType>CHILD</relationshipSubType> 
+    <relatedObjectIdentification>
+      <relatedObjectIdentifierType>LOCAL</relatedObjectIdentifierType> 
+      <relatedObjectIdentifierValue>MEDUSA:67bbcdfa-b132-49a0-8064-4ca27cd1321c-9.00002</relatedObjectIdentifierValue> 
+    </relatedObjectIdentification>
+  </relationship>
+  <relationship>
+    <relationshipType>BASIC_COMPOUND_ASSET</relationshipType> 
+    <relationshipSubType>CHILD</relationshipSubType> 
+    <relatedObjectIdentification>
+      <relatedObjectIdentifierType>LOCAL</relatedObjectIdentifierType> 
+      <relatedObjectIdentifierValue>MEDUSA:67bbcdfa-b132-49a0-8064-4ca27cd1321c-9.00002</relatedObjectIdentifierValue> 
+    </relatedObjectIdentification>
+  </relationship>
+  <linkingEventIdentifier>
+    <linkingEventIdentifierType>LOCAL</linkingEventIdentifierType> 
+    <linkingEventIdentifierValue>MEDUSA:67bbcdfa-b132-49a0-8064-4ca27cd1321c-9.00001</linkingEventIdentifierValue> 
+  </linkingEventIdentifier>
+  <linkingEventIdentifier>
+    <linkingEventIdentifierType>LOCAL</linkingEventIdentifierType> 
+    <linkingEventIdentifierValue>MEDUSA:67bbcdfa-b132-49a0-8064-4ca27cd1321c-9.07521</linkingEventIdentifierValue> 
+  </linkingEventIdentifier>
+  <linkingRightsStatementIdentifier>
+    <linkingRightsStatementIdentifierType>LOCAL</linkingRightsStatementIdentifierType> 
+    <linkingRightsStatementIdentifierValue>MEDUSA:67bbcdfa-b132-49a0-8064-4ca27cd1321c-9.07520</linkingRightsStatementIdentifierValue> 
+  </linkingRightsStatementIdentifier>
+</object>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<rights version="2.2" xsi:schemaLocation="info:lc/xmlns/premis-v2 http://www.loc.gov/standards/premis/v2/premis-v2-2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="info:lc/xmlns/premis-v2">
+  <rightsStatement>
+    <rightsStatementIdentifier>
+      <rightsStatementIdentifierType>LOCAL</rightsStatementIdentifierType> 
+      <rightsStatementIdentifierValue>local_identifier_for_rights_one</rightsStatementIdentifierValue> 
+    </rightsStatementIdentifier>
+    <rightsBasis>COPYRIGHT</rightsBasis> 
+    <copyrightInformation>
+      <copyrightStatus>IN_COPYRIGHT</copyrightStatus> 
+      <copyrightJurisdiction>United States</copyrightJurisdiction> 
+    </copyrightInformation>
+    <rightsGranted>
+      <act>DISSEMINATE</act> 
+      <restriction>CAMPUS_ONLY</restriction> 
+    </rightsGranted>
+    <linkingObjectIdentifier>
+      <linkingObjectIdentifierType>LOCAL</linkingObjectIdentifierType> 
+      <linkingObjectIdentifierValue>local_linked_object_one</linkingObjectIdentifierValue> 
+      <linkingObjectRole></linkingObjectRole> 
+    </linkingObjectIdentifier>
+  </rightsStatement>
+</rights>

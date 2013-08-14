@@ -1,0 +1,44 @@
+<agent xmlns:xlink="http://www.w3.org/1999/xlink" version="2.2" xsi:schemaLocation="info:lc/xmlns/premis-v2 http://www.loc.gov/standards/premis/v2/premis-v2-2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="info:lc/xmlns/premis-v2">
+  <agentIdentifier>
+    <agentIdentifierType>zLOCAL</agentIdentifierType> 
+    <agentIdentifierValue>MEDUSA:1581d4a9-c6a0-4b69-b2d1-969f4a36208a-1</agentIdentifierValue> 
+  </agentIdentifier>
+  <agentIdentifier>
+    <agentIdentifierType>UIUC NETID</agentIdentifierType> 
+    <agentIdentifierValue>UIUC\name_here</agentIdentifierValue> 
+  </agentIdentifier>
+  <agentIdentifier>
+    <agentIdentifierType>EMAIL</agentIdentifierType> 
+    <agentIdentifierValue>First_name Last_name</agentIdentifierValue> 
+  </agentIdentifier>
+  <agentIdentifier>
+    <agentIdentifierType>SOFTWARE_VERSION</agentIdentifierType> 
+    <agentIdentifierValue>FolderPackager 1.0.0.0</agentIdentifierValue> 
+  </agentIdentifier>
+  <agentName>FolderPackager 1.0.0.0 [Library, University of Illinois at Urbana-Champaign]</agentName> 
+  <agentType>SOFTWARE</agentType> 
+  <agentNote>Run on Computer: LIBGRLUGH, Microsoft Windows 7 Ultimate V6.1.7601.65536, English (United States)</agentNote> 
+  <agentNote>Medusa Folder Packager, Copyright © 2012 University of Illinois Board of Trustees</agentNote> 
+  <agentNote>Package a folder of files and subfolders into a PREMIS-based structure suitable for ingest into the Medusa repository.</agentNote> 
+
+  <agentExtension>
+    <mdSec ID="AE1">
+       <mdWrap MDTYPE="OTHER">
+         <xmlData>
+           <extensionData>Externally defined extension data</extensionData>
+         </xmlData>
+       </mdWrap>
+     </mdSec>
+  </agentExtension>
+
+  <linkingEventIdentifier>
+    <linkingEventIdentifierType>LC Event ID</linkingEventIdentifierType>
+    <linkingEventIdentifierValue>eID-58f202ac-22cf-11</linkingEventIdentifierValue>
+  </linkingEventIdentifier>
+
+  <linkingRightsStatementIdentifier>
+    <linkingRightsStatementIdentifierType>LC Rights ID</linkingRightsStatementIdentifierType>
+    <linkingRightsStatementIdentifierValue>rID-58f202ac-22cf-11</linkingRightsStatementIdentifierValue>
+  </linkingRightsStatementIdentifier>
+
+</agent>

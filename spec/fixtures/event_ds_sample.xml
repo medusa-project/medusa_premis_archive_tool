@@ -1,0 +1,39 @@
+<event version="2.2" xsi:schemaLocation="info:lc/xmlns/premis-v2 http://www.loc.gov/standards/premis/v2/premis-v2-2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="info:lc/xmlns/premis-v2">
+  <eventIdentifier>
+    <eventIdentifierType>LOCAL</eventIdentifierType> 
+    <eventIdentifierValue>12345</eventIdentifierValue> 
+  </eventIdentifier>
+  <eventType>validation</eventType> 
+  <eventDateTime>2013-01-01T15:45:00</eventDateTime> 
+  <eventDetail>jhove</eventDetail>
+  <linkingAgentIdentifier>
+    <linkingAgentIdentifierType>LOCAL</linkingAgentIdentifierType> 
+    <linkingAgentIdentifierValue>smith</linkingAgentIdentifierValue> 
+    <linkingAgentRole>primary</linkingAgentRole> 
+  </linkingAgentIdentifier>
+  <linkingAgentIdentifier>
+    <linkingAgentIdentifierType>MACHINE</linkingAgentIdentifierType> 
+    <linkingAgentIdentifierValue>smith_machine</linkingAgentIdentifierValue> 
+    <linkingAgentRole>secondary</linkingAgentRole> 
+  </linkingAgentIdentifier>
+  <linkingObjectIdentifier>
+    <linkingObjectIdentifierType>LOCAL</linkingObjectIdentifierType> 
+    <linkingObjectIdentifierValue>MEDUSA_object_a</linkingObjectIdentifierValue>
+    <linkingObjectRole>parent</linkingObjectRole>
+  <linkingObjectIdentifier>
+    <linkingObjectIdentifierType>LOCAL</linkingObjectIdentifierType> 
+    <linkingObjectIdentifierValue>MEDUSA_object_b</linkingObjectIdentifierValue>
+    <linkingObjectRole>child</linkingObjectRole>
+  <linkingObjectIdentifier>
+    <linkingObjectIdentifierType>LOCAL</linkingObjectIdentifierType> 
+    <linkingObjectIdentifierValue>MEDUSA_object_c</linkingObjectIdentifierValue>
+    <linkingObjectRole>child</linkingObjectRole>
+  </linkingObjectIdentifier>
+  <eventOutcomeInformation>
+    <eventOutcome>successful</eventOutcome>
+    <eventOutcomeDetail>
+      <eventOutcomeDetailNote>well-formed and valid record</eventOutcomeDetailNote>
+      <eventOutcomeDetailExtension></eventOutcomeDetailExtension>
+    </eventOutcomeDetail>
+  </eventOutcomeInformation>
+</event>
