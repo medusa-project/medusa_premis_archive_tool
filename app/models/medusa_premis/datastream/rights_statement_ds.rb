@@ -21,17 +21,18 @@ module MedusaPremis
             t.rightsStatementLinkingObjectIdentifierType_GrantedAct(:path=>"rightsStatement/oxns:rightsGranted/oxns:act", :index_as=>[:stored_searchable])
             t.rightsStatementGrantedRestriction(:path=>"rightsStatement/oxns:rightsGranted/oxns:restriction", :index_as=>[:stored_searchable])
 
+          # No need to store Premis Relationship elements.  RELS-EXT has these relationships
           # repeatable, optional group
           t.linkingObjectIdentifier(:path=>"rightsStatement/oxns:linkingObjectIdentifier")
-            t.linkingObjectIdentifierType(:path=>"rightsStatement/oxns:linkingObjectIdentifier/oxns:linkingObjectIdentifierType", :index_as=>[:stored_searchable])
-            t.linkingObjectIdentifierValue(:path=>"rightsStatement/oxns:linkingObjectIdentifier/oxns:linkingObjectIdentifierValue", :index_as=>[:stored_searchable])
-            t.linkingObjectRole(:path=>"rightsStatement/oxns:linkingObjectIdentifier/oxns:linkingObjectRole", :index_as=>[:stored_searchable])
+            t.linkingObjectIdentifierType(:path=>"rightsStatement/oxns:linkingObjectIdentifier/oxns:linkingObjectIdentifierType")
+            t.linkingObjectIdentifierValue(:path=>"rightsStatement/oxns:linkingObjectIdentifier/oxns:linkingObjectIdentifierValue")
+            t.linkingObjectRole(:path=>"rightsStatement/oxns:linkingObjectIdentifier/oxns:linkingObjectRole")
 
           # repeatable, optional group
           t.linkingAgentIdentifier(:path=>"rightsStatement/oxns:linkingAgentIdentifier")
-            t.linkingAgentIdentifierType(:path=>"rightsStatement/oxns:linkingAgentIdentifier/oxns:linkingAgentIdentifierType", :index_as=>[:stored_searchable])
-            t.linkingAgentIdentifierValue(:path=>"rightsStatement/oxns:linkingAgentIdentifier/oxns:linkingAgentIdentifierValue", :index_as=>[:stored_searchable])
-            t.linkingAgentRole(:path=>"rightsStatement/oxns:linkingAgentIdentifier/oxns:linkingAgentRole", :index_as=>[:stored_searchable])
+            t.linkingAgentIdentifierType(:path=>"rightsStatement/oxns:linkingAgentIdentifier/oxns:linkingAgentIdentifierType")
+            t.linkingAgentIdentifierValue(:path=>"rightsStatement/oxns:linkingAgentIdentifier/oxns:linkingAgentIdentifierValue")
+            t.linkingAgentRole(:path=>"rightsStatement/oxns:linkingAgentIdentifier/oxns:linkingAgentRole")
       end
 
       def self.xml_template

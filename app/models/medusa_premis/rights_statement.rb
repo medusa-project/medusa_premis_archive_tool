@@ -29,9 +29,10 @@ module MedusaPremis
     # delegate_to 'Premis-Rights-Internal', [:rightsStatement_creator]
 
     delegate_to 'Premis-Rights', [:identifierType, :identifierValue, :rightsStatementBasis, :rightsStatementCopyrightStatus, :rightsStatementCopyrightJurisdiction,
-                                 :rightsStatementLinkingObjectIdentifierType_GrantedAct, :rightsStatementGrantedRestriction,
-                                 :linkingObjectIdentifierType, :linkingObjectIdentifierValue, :linkingObjectRole,
-                                 :linkingAgentIdentifierType, :linkingAgentIdentifierValue, :linkingAgentRole]  
+                                 :rightsStatementLinkingObjectIdentifierType_GrantedAct, :rightsStatementGrantedRestriction]
+    # No need to store Premis Relationship elements.  RELS-EXT has these relationships... Though, here I'm also assuming the role of the linked-to element will be understood
+    #                              :linkingObjectIdentifierType, :linkingObjectIdentifierValue, :linkingObjectRole,
+    #                              :linkingAgentIdentifierType, :linkingAgentIdentifierValue, :linkingAgentRole]  
 
     validates_with MatchRightValidator
 

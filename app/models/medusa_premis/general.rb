@@ -4,7 +4,7 @@ module MedusaPremis
     include Hydra::ModelMixins::CommonMetadata
     include Hydra::ModelMixins::RightsMetadata
 
-    ID_THRESHOLD = 20
+    ID_THRESHOLD = 200
 
     def self.ids_or_file(id, type_of_relation)
       # This method takes in an id and a relational query type
@@ -34,6 +34,7 @@ module MedusaPremis
 
 
     def self.retrieve_ids_associated_with_id_fedora(id)
+      # NOTE: Id here must be an Id, & NOT uri
       begin
         x = ActiveFedora::Base.find(:id => id.to_s).first
       rescue ActiveFedora::ObjectNotFoundError
@@ -42,6 +43,8 @@ module MedusaPremis
       rescue
         return nil
       end 
+      # x can be nil here
+
       if (x.object_relations.nil?)
         return nil
       end

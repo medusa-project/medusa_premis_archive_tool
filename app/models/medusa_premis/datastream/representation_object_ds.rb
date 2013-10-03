@@ -14,20 +14,21 @@ module MedusaPremis
         t.objectPreservationLevelRationale(:path=>"object[@xsi:type='representation']/oxns:preservationLevel/oxns:preservationLevelRationale", :index_as=>[:stored_searchable])
         t.objectPreservationLevelDateAssigned(:path=>"object[@xsi:type='representation']/oxns:preservationLevel/oxns:preservationLevelDateAssigned", :index_as=>[:stored_searchable])
 
-        t.linkingEventIdentifierType(:path=>"object[@xsi:type='representation']/oxns:linkingEventIdentifier/oxns:linkingEventIdentifierType", :index_as=>[:stored_searchable])
-        t.linkingEventIdentifierValue(:path=>"object[@xsi:type='representation']/oxns:linkingEventIdentifier/oxns:linkingEventIdentifierValue", :index_as=>[:stored_searchable])
+        # No need to store Premis Relationship elements.  RELS-EXT has these relationships
+        t.linkingEventIdentifierType(:path=>"object[@xsi:type='representation']/oxns:linkingEventIdentifier/oxns:linkingEventIdentifierType")
+        t.linkingEventIdentifierValue(:path=>"object[@xsi:type='representation']/oxns:linkingEventIdentifier/oxns:linkingEventIdentifierValue")
 
-        t.linkingIntellectualEntityIdentifierType(:path=>"object[@xsi:type='representation']/oxns:linkingIntellectualEntityIdentifier/oxns:linkingIntellectualEntityIdentifierType", :index_as=>[:stored_searchable])
-        t.linkingIntellectualEntityIdentifierValue(:path=>"object[@xsi:type='representation']/oxns:linkingIntellectualEntityIdentifier/oxns:linkingIntellectualEntityIdentifierValue", :index_as=>[:stored_searchable])
+        t.linkingIntellectualEntityIdentifierType(:path=>"object[@xsi:type='representation']/oxns:linkingIntellectualEntityIdentifier/oxns:linkingIntellectualEntityIdentifierType")
+        t.linkingIntellectualEntityIdentifierValue(:path=>"object[@xsi:type='representation']/oxns:linkingIntellectualEntityIdentifier/oxns:linkingIntellectualEntityIdentifierValue")
 
-        t.linkingRightsStatementIdentifierType(:path=>"object[@xsi:type='representation']/oxns:linkingRightsStatementIdentifier/oxns:linkingRightsStatementIdentifierType", :index_as=>[:stored_searchable])
-        t.linkingRightsStatementIdentifierValue(:path=>"object[@xsi:type='representation']/oxns:linkingRightsStatementIdentifier/oxns:linkingRightsStatementIdentifierValue", :index_as=>[:stored_searchable])
+        t.linkingRightsStatementIdentifierType(:path=>"object[@xsi:type='representation']/oxns:linkingRightsStatementIdentifier/oxns:linkingRightsStatementIdentifierType")
+        t.linkingRightsStatementIdentifierValue(:path=>"object[@xsi:type='representation']/oxns:linkingRightsStatementIdentifier/oxns:linkingRightsStatementIdentifierValue")
 
         # Relationships
-        t.objectRelationshipType(:path=>"object[@xsi:type='representation']/oxns:relationship/oxns:relationshipType", :index_as=>[:stored_searchable])
-        t.objectRelationshipSubType(:path=>"object[@xsi:type='representation']/oxns:relationship/oxns:relationshipSubType", :index_as=>[:stored_searchable])
-        t.objectRelatedObjectIdentifierType(:path=>"object[@xsi:type='representation']/oxns:relationship/oxns:relatedObjectIdentification/oxns:relatedObjectIdentifierType", :index_as=>[:stored_searchable])
-        t.objectRelatedObjectIdentifierValue(:path=>"object[@xsi:type='representation']/oxns:relationship/oxns:relatedObjectIdentification/oxns:relatedObjectIdentifierValue", :index_as=>[:stored_searchable])
+        t.objectRelationshipType(:path=>"object[@xsi:type='representation']/oxns:relationship/oxns:relationshipType")
+        t.objectRelationshipSubType(:path=>"object[@xsi:type='representation']/oxns:relationship/oxns:relationshipSubType")
+        t.objectRelatedObjectIdentifierType(:path=>"object[@xsi:type='representation']/oxns:relationship/oxns:relatedObjectIdentification/oxns:relatedObjectIdentifierType")
+        t.objectRelatedObjectIdentifierValue(:path=>"object[@xsi:type='representation']/oxns:relationship/oxns:relatedObjectIdentification/oxns:relatedObjectIdentifierValue")
 
         # still need Significant Properties section?
 

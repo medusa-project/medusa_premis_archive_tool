@@ -33,7 +33,7 @@
     <eventOutcome>successful</eventOutcome>
     <eventOutcomeDetail>
       <eventOutcomeDetailNote>well-formed and valid record</eventOutcomeDetailNote>
-      <eventOutcomeDetailExtension></eventOutcomeDetailExtension>
+      <eventOutcomeDetailExtension>always like this</eventOutcomeDetailExtension>
     </eventOutcomeDetail>
   </eventOutcomeInformation>
 </event>

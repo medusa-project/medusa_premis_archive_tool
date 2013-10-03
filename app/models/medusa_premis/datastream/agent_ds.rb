@@ -17,15 +17,16 @@ module MedusaPremis
         # non-repeatable
         t.agentType(:path=>"agentType", :index_as=>[:stored_searchable])
 
+        # No need to store Premis Relationship elements.  RELS-EXT has these relationships
         # repeatable
         t.linkingEventIdentifier(:path=>"linkingEventIdentifier")
-          t.linkingEventIdentifierType(:path=>"linkingEventIdentifier/oxns:linkingEventIdentifierType", :index_as=>[:stored_searchable])
-          t.linkingEventIdentifierValue(:path=>"linkingEventIdentifier/oxns:linkingEventIdentifierValue", :index_as=>[:stored_searchable])
+          t.linkingEventIdentifierType(:path=>"linkingEventIdentifier/oxns:linkingEventIdentifierType")
+          t.linkingEventIdentifierValue(:path=>"linkingEventIdentifier/oxns:linkingEventIdentifierValue")
     
         # repeatable
         t.linkingRightsStatementIdentifier(:path=>"linkingRightsStatementIdentifier")
-          t.linkingRightsStatementIdentifierType(:path=>"linkingRightsStatementIdentifier/oxns:linkingRightsStatementIdentifierType", :index_as=>[:stored_searchable])
-          t.linkingRightsStatementIdentifierValue(:path=>"linkingRightsStatementIdentifier/oxns:linkingRightsStatementIdentifierValue", :index_as=>[:stored_searchable])
+          t.linkingRightsStatementIdentifierType(:path=>"linkingRightsStatementIdentifier/oxns:linkingRightsStatementIdentifierType")
+          t.linkingRightsStatementIdentifierValue(:path=>"linkingRightsStatementIdentifier/oxns:linkingRightsStatementIdentifierValue")
     
       end
 

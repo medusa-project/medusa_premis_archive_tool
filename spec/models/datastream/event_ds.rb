@@ -118,15 +118,15 @@ describe MedusaPremis::Datastream::EventDs do
          test_existing_attribute(@datastream, 'eventOutcomeDetailNote', 'well-formed and valid record')
      end
      it "should have eventOutcomeDetailExtension" do
-         test_existing_attribute(@datastream, 'eventOutcomeDetailExtension', '')
+         test_existing_attribute(@datastream, 'eventOutcomeDetailExtension', 'always like this')
      end
 
-     describe "insert linkingAgentIdentifier node into existing premis event" do
+     describe "insert eventOutcomeInformation node into existing premis event" do
        it "should work when all sub-tag values of linkingAgentIdentifier are provided" do
-         @datastream.insert_linkingAgentIdentifier(:linkingAgentIdentifierType=>"2_TEST", :linkingAgentIdentifierValue=>"2_test_value_here", :linkingAgentRole=>"2_test_role_here")
-         test_existing_attribute_multiple_occurence(@datastream,  'linkingAgentIdentifierType', ['LOCAL', 'MACHINE', '2_TEST'])
-         test_existing_attribute_multiple_occurence(@datastream,  'linkingAgentIdentifierValue', ['smith', 'smith_machine', '2_test_value_here'])
-         test_existing_attribute_multiple_occurence(@datastream,  'linkingAgentRole', ['primary', 'secondary', '2_test_role_here'])
+         @datastream.insert_eventOutcomeInformation(:eventOutcome=>"good_add", :eventOutcomeDetailNote=>"good_detail_here", :eventOutcomeDetailExtension=>"good_extension_here")
+         test_existing_attribute_multiple_occurence(@datastream,  'eventOutcome', ['successful', 'good_add'])
+         test_existing_attribute_multiple_occurence(@datastream,  'eventOutcomeDetailNote', ['well-formed and valid record', 'good_detail_here'])
+         test_existing_attribute_multiple_occurence(@datastream,  'eventOutcomeDetailExtension', ['always like this', 'good_extension_here'])
        end
      end 
    end

@@ -6,22 +6,22 @@ module MedusaPremis
       if (record.identifierType.length != record.identifierValue.length)
         record.errors[:identifierType] << "Identifier (Representation) type/value number mismatch"
       end
+      # No need to store Premis Relationship elements.  RELS-EXT has these relationships
+      # if (record.linkingEventIdentifierType.length != record.linkingEventIdentifierValue.length)
+      #   record.errors[:linkingEventIdentifierType] << "Linking Event Identifier type/value number mismatch"
+      # end
 
-      if (record.linkingEventIdentifierType.length != record.linkingEventIdentifierValue.length)
-        record.errors[:linkingEventIdentifierType] << "Linking Event Identifier type/value number mismatch"
-      end
+      # if (record.linkingIntellectualEntityIdentifierType.length != record.linkingIntellectualEntityIdentifierValue.length)
+      #   record.errors[:linkingIntellectualEntityIdentifierType] << "Linking Intellectual Entity Identifier type/value number mismatch"
+      # end
 
-      if (record.linkingIntellectualEntityIdentifierType.length != record.linkingIntellectualEntityIdentifierValue.length)
-        record.errors[:linkingIntellectualEntityIdentifierType] << "Linking Intellectual Entity Identifier type/value number mismatch"
-      end
+      # if (record.linkingRightsStatementIdentifierType.length != record.linkingRightsStatementIdentifierValue.length)
+      #   record.errors[:linkingRightsStatementIdentifierType] << "Linking Rights Statement Identifier type/value number mismatch"
+      # end
 
-      if (record.linkingRightsStatementIdentifierType.length != record.linkingRightsStatementIdentifierValue.length)
-        record.errors[:linkingRightsStatementIdentifierType] << "Linking Rights Statement Identifier type/value number mismatch"
-      end
-
-      if (record.objectRelatedObjectIdentifierType.length != record.objectRelatedObjectIdentifierValue.length)
-        record.errors[:objectRelatedObjectIdentifierType] << "Related Object Identifier (relationship) type/value number mismatch"
-      end
+      # if (record.objectRelatedObjectIdentifierType.length != record.objectRelatedObjectIdentifierValue.length)
+      #   record.errors[:objectRelatedObjectIdentifierType] << "Related Object Identifier (relationship) type/value number mismatch"
+      # end
     end
   end
 
@@ -46,11 +46,12 @@ module MedusaPremis
 
     delegate_to 'Premis-Representation-Object', [:identifierType, :identifierValue,
                                                  :objectPreservationLevelValue, :objectPreservationLevelRationale, :objectPreservationLevelDateAssigned,
-                                                 :objectOriginalName,
-                                                 :linkingEventIdentifierType, :linkingEventIdentifierValue,
-                                                 :linkingIntellectualEntityIdentifierType, :linkingIntellectualEntityIdentifierValue,  
-                                                 :linkingRightsStatementIdentifierType, :linkingRightsStatementIdentifierValue,
-                                                 :objectRelationshipType, :objectRelationshipSubType, :objectRelatedObjectIdentifierType, :objectRelatedObjectIdentifierValue]
+                                                 :objectOriginalName]
+    # No need to store Premis Relationship elements.  RELS-EXT has these relationships
+    #                                              :linkingEventIdentifierType, :linkingEventIdentifierValue,
+    #                                              :linkingIntellectualEntityIdentifierType, :linkingIntellectualEntityIdentifierValue,  
+    #                                              :linkingRightsStatementIdentifierType, :linkingRightsStatementIdentifierValue,
+    #                                              :objectRelationshipType, :objectRelationshipSubType, :objectRelatedObjectIdentifierType, :objectRelatedObjectIdentifierValue]
 
     validates :identifierType, :presence=>true
     validates :identifierValue, :presence=>true

@@ -42,8 +42,9 @@ module MedusaPremis
     # delegate_to :Event-Internal, [:eventCreator]
 
     delegate_to 'Premis-Event', [:identifierType, :identifierValue, :eventType, :eventDateTime, :eventDetail,
-                                 :linkingAgentIdentifierType, :linkingAgentIdentifierValue, :linkingAgentRole,
-                                 :linkingObjectIdentifierType, :linkingObjectIdentifierValue, :linkingObjectRole,
+    # No need to store Premis Relationship elements.  RELS-EXT has these relationships
+    #                              :linkingAgentIdentifierType, :linkingAgentIdentifierValue, :linkingAgentRole,
+    #                              :linkingObjectIdentifierType, :linkingObjectIdentifierValue, :linkingObjectRole,
                                  :eventOutcome, :eventOutcomeDetailNote, :eventOutcomeDetailExtension]
 
     validates :identifierType, :presence=>true
